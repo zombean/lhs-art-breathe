@@ -1,0 +1,7 @@
+{
+    "version": 1,
+    "ticktime": 50000,
+    "commands": [
+        {"mode":"SET","segments":[-1],"times":{"start":0,"end":0},"color":[0,0,0]}
+    ]
+}

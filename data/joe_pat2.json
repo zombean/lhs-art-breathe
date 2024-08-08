@@ -1,0 +1,366 @@
+{
+    "version": 1,
+    "ticktime": 50000,
+    "commands": [
+        {
+            "mode": "SET",
+            "segments": [
+                -1
+            ],
+            "times": {
+                "start": 0,
+                "end": 0
+            },
+            "color": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -2
+            ],
+            "times": {
+                "start": 0,
+                "end": 100
+            },
+            "color": [
+                245,
+                240,
+                1
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -3
+            ],
+            "times": {
+                "start": 40,
+                "end": 120
+            },
+            "color": [
+                255,
+                206,
+                3
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -4
+            ],
+            "times": {
+                "start": 60,
+                "end": 140
+            },
+            "color": [
+                253,
+                154,
+                1
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -5
+            ],
+            "times": {
+                "start": 80,
+                "end": 160
+            },
+            "color": [
+                253,
+                197,
+                4
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -6
+            ],
+            "times": {
+                "start": 100,
+                "end": 185
+            },
+            "color": [
+                240,
+                5,
+                5
+            ]
+        },
+        {
+            "mode": "SET",
+            "segments": [
+                -6
+            ],
+            "times": {
+                "start": 185,
+                "end": 200
+            },
+            "color": [
+                240,
+                5,
+                5
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -6
+            ],
+            "times": {
+                "start": 200,
+                "end": 240
+            },
+            "color": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -5
+            ],
+            "times": {
+                "start": 230,
+                "end": 280
+            },
+            "color": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -4
+            ],
+            "times": {
+                "start": 270,
+                "end": 320
+            },
+            "color": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -3
+            ],
+            "times": {
+                "start": 310,
+                "end": 360
+            },
+            "color": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -2
+            ],
+            "times": {
+                "start": 350,
+                "end": 400
+            },
+            "color": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -2
+            ],
+            "times": {
+                "start": 400,
+                "end": 500
+            },
+            "color": [
+                42,
+                26,
+                216
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -3
+            ],
+            "times": {
+                "start": 440,
+                "end": 520
+            },
+            "color": [
+                78,
+                38,
+                226
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -4
+            ],
+            "times": {
+                "start": 460,
+                "end": 540
+            },
+            "color": [
+                114,
+                49,
+                236
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -5
+            ],
+            "times": {
+                "start": 480,
+                "end": 560
+            },
+            "color": [
+                149,
+                61,
+                245
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -6
+            ],
+            "times": {
+                "start": 500,
+                "end": 585
+            },
+            "color": [
+                185,
+                72,
+                255
+            ]
+        },
+        {
+            "mode": "SET",
+            "segments": [
+                -6
+            ],
+            "times": {
+                "start": 585,
+                "end": 600
+            },
+            "color": [
+                185,
+                72,
+                255
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -6
+            ],
+            "times": {
+                "start": 600,
+                "end": 640
+            },
+            "color": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -5
+            ],
+            "times": {
+                "start": 630,
+                "end": 680
+            },
+            "color": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -4
+            ],
+            "times": {
+                "start": 670,
+                "end": 720
+            },
+            "color": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -3
+            ],
+            "times": {
+                "start": 710,
+                "end": 760
+            },
+            "color": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -2
+            ],
+            "times": {
+                "start": 750,
+                "end": 800
+            },
+            "color": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "mode": "SET",
+            "segments": [
+                -1
+            ],
+            "times": {
+                "start": 800,
+                "end": 820
+            },
+            "color": [
+                0,
+                0,
+                0
+            ]
+        }
+    ]
+}

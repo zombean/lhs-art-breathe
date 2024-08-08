@@ -1,0 +1,195 @@
+{
+    "version": 1,
+    "ticktime": 500,
+    "audio": "FirstCall",
+    "commands": [
+        {"mode":"SET","segments":[-1],"times":{"start":0,"end":0},"color":[0,0,0]},
+        {
+            "mode": "SET",
+            "segments": [
+                -3,
+                -4,
+                -5,
+                -6
+            ],
+            "times": {
+                "start": 0,
+                "end": 0
+            },
+            "color": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "mode": "SET",
+            "segments": [
+                -2
+            ],
+            "times": {
+                "start": 0,
+                "end": 0
+            },
+            "color": [
+                245,
+                240,
+                1
+            ]
+        },
+        {
+            "mode": "SET",
+            "segments": [
+                -3
+            ],
+            "times": {
+                "start": 4900,
+                "end": 5000
+            },
+            "color": [
+                245,
+                240,
+                1
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -3
+            ],
+            "times": {
+                "start": 5000,
+                "end": 10000
+            },
+            "color": [
+                255,
+                206,
+                3
+            ]
+        },
+        {
+            "mode": "SET",
+            "segments": [
+                -4
+            ],
+            "times": {
+                "start": 14900,
+                "end": 15000
+            },
+            "color": [
+                255,
+                206,
+                3
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -4
+            ],
+            "times": {
+                "start": 15000,
+                "end": 25000
+            },
+            "color": [
+                253,
+                154,
+                1
+            ]
+        },
+        {
+            "mode": "SET",
+            "segments": [
+                -5
+            ],
+            "times": {
+                "start": 29000,
+                "end": 30000
+            },
+            "color": [
+                253,
+                154,
+                1
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -5
+            ],
+            "times": {
+                "start": 30000,
+                "end": 40000
+            },
+            "color": [
+                253,
+                197,
+                4
+            ]
+        },
+        {
+            "mode": "SET",
+            "segments": [
+                -6
+            ],
+            "times": {
+                "start": 44000,
+                "end": 45000
+            },
+            "color": [
+                253,
+                197,
+                4
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -6
+            ],
+            "times": {
+                "start": 45000,
+                "end": 50000
+            },
+            "color": [
+                240,
+                5,
+                5
+            ]
+        },
+        {
+            "mode": "SET",
+            "segments": [
+                -6
+            ],
+            "times": {
+                "start": 50000,
+                "end": 65000
+            },
+            "color": [
+                240,
+                5,
+                5
+            ]
+        },
+        {
+            "mode": "LINEAR",
+            "segments": [
+                -2,
+                -3,
+                -4,
+                -5,
+                -6
+            ],
+            "times": {
+                "start": 65000,
+                "end": 100000
+            },
+            "color": [
+                0,
+                0,
+                0
+            ]
+        }
+    ]
+}

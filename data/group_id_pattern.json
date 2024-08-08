@@ -1,0 +1,156 @@
+{
+    "version": 1,
+    "ticktime": 1000000,
+    "commands": [
+        {
+            "mode": "SET",
+            "segments": [
+                -1
+            ],
+            "times": {
+                "start": 0,
+                "end": 0
+            },
+            "color": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "mode": "SET",
+            "segments": [
+                -2
+            ],
+            "times": {
+                "start": 0,
+                "end": 0
+            },
+            "color": [
+                255,
+                255,
+                255
+            ]
+        },
+        {
+            "mode": "SET",
+            "segments": [
+                -1
+            ],
+            "times": {
+                "start": 1,
+                "end": 1
+            },
+            "color": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "mode": "SET",
+            "segments": [
+                -3
+            ],
+            "times": {
+                "start": 1,
+                "end": 1
+            },
+            "color": [
+                255,
+                255,
+                255
+            ]
+        },
+        {
+            "mode": "SET",
+            "segments": [
+                -1
+            ],
+            "times": {
+                "start": 2,
+                "end": 2
+            },
+            "color": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "mode": "SET",
+            "segments": [
+                -4
+            ],
+            "times": {
+                "start": 2,
+                "end": 2
+            },
+            "color": [
+                255,
+                255,
+                255
+            ]
+        },
+        {
+            "mode": "SET",
+            "segments": [
+                -1
+            ],
+            "times": {
+                "start": 3,
+                "end": 3
+            },
+            "color": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "mode": "SET",
+            "segments": [
+                -5
+            ],
+            "times": {
+                "start": 3,
+                "end": 3
+            },
+            "color": [
+                255,
+                255,
+                255
+            ]
+        },
+        {
+            "mode": "SET",
+            "segments": [
+                -1
+            ],
+            "times": {
+                "start": 4,
+                "end": 4
+            },
+            "color": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "mode": "SET",
+            "segments": [
+                -6
+            ],
+            "times": {
+                "start": 4,
+                "end": 4
+            },
+            "color": [
+                255,
+                255,
+                255
+            ]
+        }
+    ]
+}
