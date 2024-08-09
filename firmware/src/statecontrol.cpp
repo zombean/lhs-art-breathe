@@ -274,13 +274,13 @@ void loadPattern(RunState* runstate) {
   rewind(fd);
   ESP_EARLY_LOGI(TAG_STATE, "File is %u bytes", fsize);
   if (fsize > 16384) {
-    ESP_LOGE("FILE TOO BIG");
+    ESP_LOGE(TAG_STATE, "FILE TOO BIG");
     fclose(fd);
     return;
   }
   char* fileContent = (char*)malloc(fsize+1);
   if(!fileContent) {
-    ESP_LOGE("OUT OF MEMORY");
+    ESP_LOGE(TAG_STATE, "OUT OF MEMORY");
     fclose(fd);
     return;
   }

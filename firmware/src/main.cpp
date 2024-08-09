@@ -96,6 +96,8 @@ void setup() {
   }
   */
 
+static portMUX_TYPE mux = portMUX_INITIALIZER_UNLOCKED;;
+
 void outputFastLed(RunState* runstate) {
   uint8_t s0c[3] = {};
     for (int i = 0; i < SEGMENTS; i++) {
@@ -103,11 +105,9 @@ void outputFastLed(RunState* runstate) {
       //ESP_LOGI(TAG_MAIN, "Setting led %u to color (&%u, %u, %u)", i, s0c[0], s0c[1], s0c[2]);
       leds[i].setRGB(s0c[0], s0c[1], s0c[2]);
     }
-    portMUX_TYPE mux;
-    vPortCPUInitializeMutex(&mux);
-    vTaskEnterCritical(&mux);
+    taskENTER_CRITICAL(&mux);
     FastLED.show();
-    vTaskExitCritical(&mux);
+    taskEXIT_CRITICAL(&mux);
 }
 
 void loop() {

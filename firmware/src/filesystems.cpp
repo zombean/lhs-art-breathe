@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include "filesystems.hpp"
+#include <driver/sdmmc_host.h>
 
 #define TAG_FS "mandala-fs"
 
