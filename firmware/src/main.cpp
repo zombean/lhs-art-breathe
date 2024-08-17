@@ -5,10 +5,10 @@
 #include <esp_vfs.h>
 #include <cJSON.h>
 
-#include <SPI.h>
+//#include <SPI.h>
 //#define FASTLED_ALL_PINS_HARDWARE_SPI
-//#define FASTLED_ESP32_SPI_BUS HSPI
-#include <FastLED.h>
+//#define FASTLED_ESP32_SPI_BUS VSPI
+//#include <FastLED.h>
 
 /// P9813
 
@@ -18,10 +18,14 @@
 
 // FASTLED STUFF
 #define NUM_LEDS SEGMENTS
-CRGB leds[NUM_LEDS];
-
+//CRGB leds[NUM_LEDS];
 #define DATA_PIN 19
 #define CLOCK_PIN 18
+
+#include <NeoPixelBus.h>
+#define USE_DEFAULT_SPI_PORT 1
+
+NeoPixelBus<P9813BgrFeature, P9813SpiMethod> leds(NUM_LEDS);
 // /FASTLED STUFF
 
 #define TAG_MAIN "mandala"
@@ -32,7 +36,7 @@ RunState runstate = {
   .config = NULL,
   .lastCommandIndex = 0,
   .currentTime = 0,
-  .runMode = RunMode::InitialInternal
+  .runMode = RunMode::NoSDInternal
 };
 
 AudioState* audiostate;
@@ -53,8 +57,10 @@ void setup() {
   } else {
     ESP_EARLY_LOGI(TAG_MAIN, "No SD card inserted");
   }
+  // ESP_EARLY_LOGI(TAG_MAIN, "Initialising FASTLED");
+  //FastLED.addLeds<P9813, DATA_PIN, CLOCK_PIN, RGB>(leds, NUM_LEDS);
   ESP_EARLY_LOGI(TAG_MAIN, "Initialising FASTLED");
-  FastLED.addLeds<P9813, DATA_PIN, CLOCK_PIN, RGB>(leds, NUM_LEDS);
+  leds.Begin(CLOCK_PIN, 0, DATA_PIN, 0);
   ESP_EARLY_LOGI(TAG_MAIN, "Initialising cJSON");
   cJSON_InitHooks(&hooks);
   //ESP_EARLY_LOGI(TAG_MAIN, "Initialising I2S");
@@ -103,10 +109,12 @@ void outputFastLed(RunState* runstate) {
     for (int i = 0; i < SEGMENTS; i++) {
       runstate->segmentControllers[i].getCurrentColor(s0c);
       //ESP_LOGI(TAG_MAIN, "Setting led %u to color (&%u, %u, %u)", i, s0c[0], s0c[1], s0c[2]);
-      leds[i].setRGB(s0c[0], s0c[1], s0c[2]);
+      //leds[i].setRGB(s0c[0], s0c[1], s0c[2]);
+      leds.SetPixelColor(i, RgbColor(s0c[0], s0c[1], s0c[2]));
     }
     taskENTER_CRITICAL(&mux);
-    FastLED.show();
+    // FastLED.show();
+    leds.Show();
     taskEXIT_CRITICAL(&mux);
 }
 
