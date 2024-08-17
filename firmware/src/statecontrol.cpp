@@ -11,11 +11,11 @@ uint center[] = {24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
 uint inner_len = 4;
 uint inner[] = {3, 9, 14, 20};
 uint mid1_len = 8;
-uint mid1[] = {0, 2, 6, 8, 15, 17, 19, 23};
+uint mid1[] = {0, 2, 6, 8, 15, 17, 21, 23};
 uint mid2_len = 8;
 uint mid2[] = {1, 5, 7, 11, 12, 16, 18, 22};
 uint outer_len = 4;
-uint outer[] = {4, 10, 13, 21}; //, , 15
+uint outer[] = {4, 10, 13, 19}; //, , 15
 
 SegmentGroup* initSegmentGroups() {
   // -1 = ALL
@@ -120,11 +120,17 @@ void getNextPattern(const char* path, RunState* runstate) {
   *length = 0;
   closeAndReturn: 
   //TODO FIX ME AND ADD FREE ON SUCCESS
+  
   if (*line != NULL) {
+    ESP_LOGD(TAG_STATE, "Stripping newlines from %s", *line);
     strcpy(runstate->patternName, *line);
     if ((runstate->patternName[strlen(runstate->patternName)-2] == '\n') || (runstate->patternName[strlen(runstate->patternName)-2] == '\r' )) {
       runstate->patternName[strlen(runstate->patternName)-2] = 0;
     }
+    if ((runstate->patternName[strlen(runstate->patternName)-1] == '\n') || (runstate->patternName[strlen(runstate->patternName)-1] == '\r' )) {
+      runstate->patternName[strlen(runstate->patternName)-1] = 0;
+    }
+    ESP_LOGD(TAG_STATE, "Stripped newlines; %s", runstate->patternName);
   }
 
   fclose(fd);
@@ -313,6 +319,7 @@ bool doLoad(RunState* runstate) {
   }
   strcat(patternsPath, "/patterns.txt");
   if (!isFile(patternsPath)) {
+    ESP_EARLY_LOGI(TAG_STATE, "Patterns file not found");
     return false;
   }
   getNextPattern(patternsPath, runstate);
